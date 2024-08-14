@@ -4,6 +4,8 @@
 
   vars_files:
     - default.config.yml
+  environment:
+    PATH: "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
   pre_tasks:
     - name: Include playbook configuration.

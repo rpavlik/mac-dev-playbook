@@ -1,0 +1,42 @@
+---
+configure_dotfiles: true
+
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - com.apple.Photos
+  - com.apple.FaceTime
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Freeform
+
+homebrew_cask_apps:
+  - firefox
+# Workaround https://github.com/geerlingguy/ansible-collection-mac/issues/79
+  - dockutil
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - doxygen
+  - git
+  - gh
+  - ssh-copy-id
+  - wget
+  - zsh-history-substring-search
+  - cmake
+  - ninja
+
+
+dotfiles_files:
+  # - .zshrc
+  # - .gitignore
+  - .inputrc
+  - .osx
+  # - .vimrc
+
+dotfiles_repo: https://github.com/rpavlik/geerlingguy-dotfiles.git

@@ -24,8 +24,6 @@ dockitems_remove:
 
 homebrew_cask_apps:
   - firefox
-# Workaround https://github.com/geerlingguy/ansible-collection-mac/issues/79
-  - dockutil
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.

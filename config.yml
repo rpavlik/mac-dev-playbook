@@ -3,17 +3,24 @@ configure_dotfiles: true
 
 configure_dock: true
 dockitems_remove:
-  - Launchpad
-  - TV
-  - Podcasts
-  - com.apple.Photos
-  - com.apple.FaceTime
-  - FaceTime
   - Calendar
   - Contacts
-  - Reminders
-  - Notes
+  - FaceTime
   - Freeform
+  - Launchpad
+  - Mail
+  - Maps
+  - Messages
+  - Music
+  - News
+  - Notes
+  - Photos
+  - Podcasts
+  - Reminders
+  - TV
+  - com.apple.FaceTime
+  - com.apple.Photos
+# - 'App Store'
 
 homebrew_cask_apps:
   - firefox
@@ -22,14 +29,18 @@ homebrew_cask_apps:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - bash-completion
+  - clang-format@11
+  - cmake
   - doxygen
-  - git
   - gh
+  - git
+  - git-lfs
+  - ninja
+  - readline
   - ssh-copy-id
   - wget
   - zsh-history-substring-search
-  - cmake
-  - ninja
 
 
 dotfiles_files:
